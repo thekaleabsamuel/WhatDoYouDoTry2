@@ -1,0 +1,68 @@
+{
+    "Archive": [
+        {
+        "id": 1,  
+        "title":"Cranberry Jerry Episode 1",
+        "image":"",
+        "date":"03-20-24",
+        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",    
+        "mp3": "",    
+        "message": ""
+        },
+        {           
+            
+        "id": 2,  
+        "title":"Running Through The Summer Documentary",
+        "image":"",
+        "date":"10-31-23",
+        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",  
+        "mp3":"",
+        "message":""
+
+
+        },
+        {
+        "id": 3,  
+        "title":"Flier For Reezy",
+        "image":"",
+        "date":"03-19-24",
+        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs", 
+        "mp3":"",
+        "message":""
+
+        },
+        {
+        "id": 4,  
+        "title":"Trapped in Anime M/V Treatment",
+        "image":"",
+        "date":"03-19-24",
+        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs", 
+        "mp3": "" ,
+        "message":""
+    
+            },
+            {
+
+        "id": 5,  
+        "title":"Fancy feat. Chico Mcgee (prod.Reezy Keys)",
+        "image":"",
+        "date":"03-09-24",
+        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",  
+        "mp3":"",
+        "message":""
+        
+                },
+                {
+
+        "id": 5,  
+        "title":"King Kaleb - Save it M/V",
+        "image":"",
+        "date":"02-19-24",
+        "video":"",  
+        "mp3":"",
+        "message":"It's coming soon"
+
+                }
+
+    ]
+}
