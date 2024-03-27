@@ -1,15 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+
 
 function Messages() {
   const [messages, setMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3030/Archive')
+    fetch('http://localhost:3030/Archive')
       .then(response => {
         setMessages(response.data);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        setError(error.message);
+        setIsLoading(false);
       });
   }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div>

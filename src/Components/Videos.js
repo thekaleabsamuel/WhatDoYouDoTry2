@@ -6,7 +6,7 @@ function Videos() {
   const [video, setVideos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3030/Archive')
+    fetch('http://localhost:3030/Archive')
       .then(response => {
         setVideos(response.data);
       });

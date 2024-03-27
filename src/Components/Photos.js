@@ -1,21 +1,35 @@
-// Photos.js
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
-function Photos() { // Change to uppercase
+
+function Photos() {
   const [photos, setPhotos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3030/Archive')
+    fetch('http://localhost:3030/Archive')
       .then(response => {
         setPhotos(response.data);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        setError(error.message);
+        setIsLoading(false);
       });
   }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div>
       <h1>Photos</h1>
-      {photos.map(photo => ( // Change to photos
+      {photos.map(photo => (
         <div key={photo.id}>
           <h2>{photo.title}</h2>
           <p>{photo.body}</p>
@@ -25,4 +39,4 @@ function Photos() { // Change to uppercase
   );
 }
 
-export default Photos; // Change to Photos
+export default Photos;

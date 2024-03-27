@@ -13,7 +13,7 @@ function Upload() {
       body
     };
 
-    axios.post('http://localhost:3000/messages', message)
+    fetch('http://localhost:3000/messages', message)
       .then(() => {
         setTitle('');
         setBody('');
