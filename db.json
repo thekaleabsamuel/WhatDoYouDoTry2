@@ -4,6 +4,7 @@
         "id": 1,  
         "title":"Cranberry Jerry Episode 1",
         "image":"",
+        "photoImage":"",
         "date":"03-20-24",
         "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",    
         "mp3": "",    
@@ -15,7 +16,8 @@
         "title":"Running Through The Summer Documentary",
         "image":"",
         "date":"10-31-23",
-        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",  
+        "photoImage":"",
+        "video":"https://youtu.be/CdkMyeRj1F4",  
         "mp3":"",
         "message":""
 
@@ -26,7 +28,8 @@
         "title":"Flier For Reezy",
         "image":"",
         "date":"03-19-24",
-        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs", 
+        "photoImage":"https://i.postimg.cc/GpTFLLpT/Screen-Shot-2024-03-28-at-11-15-34-AM.png",
+        "video":"", 
         "mp3":"",
         "message":""
         
@@ -35,8 +38,9 @@
         "id": 4,  
         "title":"Trapped in Anime M/V Treatment",
         "image":"",
+        "photoImage":"",
         "date":"03-19-24",
-        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs", 
+        "video":"", 
         "mp3": "" ,
         "message":""
     
@@ -45,17 +49,19 @@
 
         "id": 5,  
         "title":"Fancy feat. Chico Mcgee (prod.Reezy Keys)",
+        "photoImage":"",
         "image":"",
         "date":"03-09-24",
-        "video":"https://www.youtube.com/watch?v=q-7DLRMAFbs",  
+        "video":"",  
         "mp3":"",
         "message":""
         
                 },
                 {
 
-        "id": 5,  
+        "id": 6,  
         "title":"King Kaleb - Save it M/V",
+        "photoImage":"",
         "image":"",
         "date":"02-19-24",
         "video":"",  
@@ -63,17 +69,56 @@
         "message":"It's coming soon"
 
                 },
-                {
 
-        "id": 6,  
-        "title":"_0",
+    {
+
+        "id": 7,  
+        "title":"Lawn Chair Wednesday Episode 1",
+        "photoImage":"",
         "image":"",
-        "date":"_0",
-        "video":"__",  
-        "mp3":"_",
-        "message":"It's coming soon"
+        "date":"01-17-24",
+        "video":"https://www.youtube.com/watch?v=tlAwGrM_VAs",  
+        "mp3":"",
+        "message":""
+
+                },
+    {
+
+        "id": 8,  
+        "title":"Words Of Affirmation",
+        "photoImage":"",
+        "image":"https://i.postimg.cc/L5RVXcqk/Screen-Shot-2024-03-28-at-12-06-31-PM.png",
+        "date":"01-17-24",
+        "video":"",  
+        "mp3":"",
+        "message":"Text From Reezy Keys"
+
+                },
+    {
+
+        "id": 9,  
+        "title":"How Did You Do It ? ",
+        "Photoimage":"",
+        "image":"https://i.postimg.cc/CxyxqwMV/Screen-Shot-2024-03-28-at-12-09-18-PM.png",
+        "date":"03-27-24",
+        "video":"",  
+        "mp3":"",
+        "message":"Text From Slim"
+
+                },
+    {
+
+        "id": 10,  
+        "title":"New Beginnings ",
+        "Photoimage":"",
+        "image":"https://i.postimg.cc/Z584vg57/IMG-5468.jpg",
+        "date":"03-27-24",
+        "video":"",  
+        "mp3":"",
+        "message":"Text From Chico Mcgee"
 
                 }
 
+        
     ]
 }

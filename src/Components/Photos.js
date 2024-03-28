@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
-
 function Photos() {
   const [photos, setPhotos] = useState([]);
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3030/Archive')
-      .then(response => {
-        setPhotos(response.data);
+    fetch('http://localhost:3000/Archive')
+      .then(response => response.json())
+      .then(data => {
+        const photos = data.filter(item => item.title && item.photoImage);
+        setPhotos(photos);
         setIsLoading(false);
       })
       .catch(error => {
@@ -17,6 +19,10 @@ function Photos() {
         setIsLoading(false);
       });
   }, []);
+
+  const handleClick = photo => {
+    setSelectedPhoto(photo);
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -30,11 +36,18 @@ function Photos() {
     <div>
       <h1>Photos</h1>
       {photos.map(photo => (
-        <div key={photo.id}>
+        <div key={photo.id} onClick={() => handleClick(photo)}>
           <h2>{photo.title}</h2>
-          <p>{photo.body}</p>
+          <img src={photo.photoImage} alt={photo.title} /> {/* Display the photoImage */}
         </div>
       ))}
+      {selectedPhoto && (
+        <div>
+          <h2>{selectedPhoto.title}</h2>
+          <img src={selectedPhoto.photoImage} alt={selectedPhoto.title} />
+          {/* Display other details of the selected photo */}
+        </div>
+      )}
     </div>
   );
 }
