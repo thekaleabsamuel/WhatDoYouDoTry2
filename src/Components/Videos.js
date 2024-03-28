@@ -28,17 +28,17 @@ function Videos() {
   };
 
   return (
-    <div>
+    <div className="videos-container">
       <h1>Videos</h1>
       {videos.map(videoItem => (
-        <div key={videoItem.id} onClick={() => handleClick(videoItem.id)}>
+        <div className="video-item" key={videoItem.id} onClick={() => handleClick(videoItem.id)}>
           <h2>{videoItem.title}</h2>
           {expandedVideoId === videoItem.id && (
-            <div>
-              {/* Display other details of the video */}
+            <div className="video-details">
               <p>Date: {videoItem.date}</p>
               <p>Video:</p>
               <iframe
+                className="video-iframe"
                 width="560"
                 height="315"
                 src={videoItem.video}
@@ -46,13 +46,16 @@ function Videos() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              {/* Add more details as needed */}
             </div>
           )}
         </div>
       ))}
+                    <img className="videos-gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGwxdThjcTJncWR2cGI1bDFjbzRsaXh2Z2F4dGV5cmVmNWNpaWU5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RH1ZaPgt6M0iZmuwFl/giphy.gif" alt="Videos animation" />
+
     </div>
+
   );
 }
+
 
 export default Videos;

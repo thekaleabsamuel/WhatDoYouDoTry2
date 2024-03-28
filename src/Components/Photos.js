@@ -33,18 +33,18 @@ function Photos() {
   }
 
   return (
-    <div>
+    <div className="photos-container">
       <h1>Photos</h1>
       {photos.map(photo => (
         <div key={photo.id} onClick={() => handleClick(photo)}>
           <h2>{photo.title}</h2>
-          <img src={photo.photoImage} alt={photo.title} /> {/* Display the photoImage */}
+          <img className="photo-image" src={photo.photoImage} alt={photo.title} /> {/* Display the photoImage */}
         </div>
       ))}
       {selectedPhoto && (
         <div>
           <h2>{selectedPhoto.title}</h2>
-          <img src={selectedPhoto.photoImage} alt={selectedPhoto.title} />
+          <img className="photo-image" src={selectedPhoto.photoImage} alt={selectedPhoto.title} />
           {/* Display other details of the selected photo */}
         </div>
       )}

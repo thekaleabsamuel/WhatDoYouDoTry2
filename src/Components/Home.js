@@ -9,16 +9,18 @@ import Search from '../Components/Search';
 function Home() {
   return (
     <div>
-      <h1 classname="h11">WhatDoYouDo?</h1>
+      <div className="title-container">
+        <h1 className="what">WhatDoYouDo?</h1>
+      </div>
       <Navbar> Navbar </Navbar>
-        <ul>
+        {/* <ul>
           <li><Link to="/messages">Messages</Link></li>
           <li><Link to="/videos">Videos</Link></li>
           <li><Link to="/photos">Photos</Link></li>
-        </ul>
-      
+        </ul> */}
+
+      <img className="ipad" src="https://i.postimg.cc/HnMLL9vb/istockphoto-1158686941-612x612-removebg-preview.png" />      
     </div>
   );
 }
-
 export default Home;

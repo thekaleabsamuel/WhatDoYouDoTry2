@@ -1,17 +1,117 @@
-/* @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; */
-
 .App {
-  text-align: center;
-}
+    text-align: center;
+  }
+  
+  .what {
+    text-align: center;
+  }
+  
+  .overlay {
+    background: url('./Components/Assets/istockphoto-1158686941-612x612-removebg-preview.png') no-repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .ipad {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    animation: popUp 2s ease-out;
+  }
+  
+  .photos-container {
+    text-align: center;
+  }
+  
+  .search-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    animation: popUp 2s ease-out;
+  }
+  
+  .photo-image {
+    width: 25%;
+    height: auto;
+  }
+  
+  .videos-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    animation: popUp 2s ease-out;
+  }
+  
+  .upload-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    animation: popUp 2s ease-out;
+  }
+  
+  .videos-container {
+    text-align: center;
+  }
+  
+  body {
+    background: url('./Components/Assets/9f0e91ba-6d76-47e6-a20b-9242f4c52609.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .device {
+    background: url('./Components/Assets/istockphoto-1158686941-612x612-removebg-preview.png') no-repeat center center;
+    width: 800px;
+    height: 600px;
+    position: relative;
+  }
+  
+  .screen {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 700px;
+    height: 500px;
+    overflow: auto;
+  }
+  
+  .messages-container {
+    text-align: center;
+  }
+  
+  .message-content {
+    text-align: center;
+  }
+  
+  .message-image {
+    width: 50%; /* Adjust to make the image bigger or smaller */
+    height: auto; /* Keep the aspect ratio of the image */
+  }
 
-
-
-nav {
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-container img {
+    margin-left: 20px;
+  }
+  
+  nav {
     display: flex;
     justify-content: space-around;
-    background-color: #282c34;
+    background-color: transparent;
     padding: 20px 0;
   }
   
@@ -28,45 +128,63 @@ nav {
   nav ul li a {
     color: white;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-
-.App nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #282c34;
-  padding: 20px 0;
-}
-
-.App h1 {
-  text-align: center;
-}
-
-.App nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.App nav ul li {
-  margin: 0 20px;
-}
-
-.App nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+  
+  .App nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 20px 0;
+  }
+  
+  .App h1 {
+    text-align: center;
+  }
+  
+  .App nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .App nav ul li {
+    margin: 0 20px;
+  }
+  
+  .App nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .message-image {
+    width: 50%; /* Adjust to make the image bigger or smaller */
+    height: auto; /* Keep the aspect ratio of the image */
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

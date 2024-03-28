@@ -46,6 +46,7 @@ function Upload() {
 
   return (
     <div>
+
       <h1>Upload</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -77,6 +78,8 @@ function Upload() {
           <input type="text" value={message} onChange={e => setMessage(e.target.value)} />
         </label>
         <button type="submit">Submit</button>
+        <img className="upload-gif" src="https://media.tenor.com/xTujfMHupbEAAAAi/under-construction-lex.gif" alt="Upload animation" />
+
       </form>
     </div>
   );

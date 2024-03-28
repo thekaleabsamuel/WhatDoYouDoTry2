@@ -8,7 +8,9 @@ function Navbar() {
         <li className="mx-5"><Link className="text-white no-underline" to="/upload">Upload</Link></li>
         <li className="mx-5"><Link className="text-white no-underline" to="/videos">Videos</Link></li>
         <li className="mx-5"><Link className="text-white no-underline" to="/photos">Photos</Link></li>
+        <li className="mx-5"><Link className="text-white no-underline" to="/messages">Messages</Link></li>
         <li className="mx-5"><Link className="text-white no-underline" to="/search">Search</Link></li>
+
       </ul>
     </nav>
   );

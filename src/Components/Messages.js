@@ -33,23 +33,22 @@ function Messages() {
   }
 
   return (
-    <div>
+    <div className="messages-container">
       <h1>Messages</h1>
       {messages.map(message => (
-        <div key={message.id} onClick={() => handleClick(message)}>
+        <div className="message-content" key={message.id} onClick={() => handleClick(message)}>
           <h2>{message.title}</h2>
-          <img src={message.image} alt={message.title} /> {/* Display the image */}
-          <p>{message.message}</p> {/* Display the message */}
-          <p>Date: {message.date}</p> {/* Display the date */}
+          <img className="message-image" src={message.image} alt={message.title} />
+          <p>{message.message}</p>
+          <p>Date: {message.date}</p>
         </div>
       ))}
       {selectedMessage && (
-        <div>
+        <div className="message-content">
           <h2>{selectedMessage.title}</h2>
-          <img src={selectedMessage.image} alt={selectedMessage.title} />
-          <p>{selectedMessage.message}</p> {/* Display the selected message */}
-          <p>Date: {selectedMessage.date}</p> {/* Display the date of the selected message */}
-          {/* Display other details of the selected message */}
+          <img className="message-image" src={selectedMessage.image} alt={selectedMessage.title} />
+          <p>{selectedMessage.message}</p>
+          <p>Date: {selectedMessage.date}</p>
         </div>
       )}
     </div>
